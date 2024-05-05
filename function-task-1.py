@@ -32,14 +32,14 @@ def encode_caesar_cipher(str_target='', offset=0):
 
     return encoded
 
-def decode_caesar_chiper(decoded_str='', offset=0):
+def decode_caesar_cipher(decoded_str='', offset=0):
     return encode_caesar_cipher(decoded_str, offset=offset * -1)
 
 my_str = 'hello world!'
 offset = 10
 
 encoded = encode_caesar_cipher(my_str, offset)
-decoded = decode_caesar_chiper(encoded, offset)
+decoded = decode_caesar_cipher(encoded, offset)
 
 print(my_str)
 print(encoded)
