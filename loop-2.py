@@ -34,7 +34,18 @@ print_answer('2b.', answer_2b)
 
 # c. sum appears number of 1, 4, 7, 10, 13, 16, 19
 print_answer('2c.')
+
+# solution 1
 print(sum(range(1, 22, 3)))
+
+# solution 2
+answer_2c = range(1, 22, 3)
+answer_2c_sum = 0
+
+for i in answer_2c:
+    answer_2c_sum += i
+
+print(f"Jumlah bilangan: {answer_2c_sum}")
 
 # d. print number infinitely when number is not 11
 print_answer('2d.')
