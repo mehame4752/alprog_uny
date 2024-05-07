@@ -12,16 +12,13 @@ def print_answer(identity = None, iteration = []):
 # 1 2 3
 # 4 5 6
 # 7 8 9
-entries = range(1, 10)
-
 print_answer('1')
-i = 0
-while i in range(0, 9, 3):
+
+entries = range(1, 10)
+for i in range(0, 9, 3):
     instance_row = list(entries[i: i + 3])
 
     print(" ".join(str(e) for e in instance_row))
-
-    i += 3
 
 # 2. loop sequeces of
 # a. 0, 2, 4, 6, 8, .., 100
@@ -54,7 +51,6 @@ print_answer('2d.')
 while True:
     num = input("input angka: ")
 
-    if int(num) == 11:
-        break
+    if num == '11': break
 
     print(num)
